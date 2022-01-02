@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+# PennApps Mentoring
+
+Redesign of [mentoring.pennapps.com](https://mentoring.pennapps.com).
+
+## Planning
+- [Mockup](https://www.figma.com/file/dq9QLomuRQQfMPHsMMYdpl/PennApps-Mentoring?node-id=0%3A1)
+- [Content](https://wild-router-277.notion.site/PennApps-Mentoring-29d9333db918499a8ce09100234681a0)
+- [Assets](https://drive.google.com/drive/u/1/folders/1kmN2ZTyjI9ulX9KQAJ6fd4GVArb2H1Sl)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
