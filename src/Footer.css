@@ -1,0 +1,54 @@
+.Footer {
+	width: 100%;
+	padding: 2rem 0;
+	background-color: #4C5391;
+	z-index: 1;
+	color: white;
+	font-family: "HalisR-Light";
+	text-align: left;
+	font-size: 0.9rem;
+}
+
+.Footer a {
+	color: white;
+	text-decoration: none;
+}
+
+.Footer-row {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+@media (max-width: 575px) {
+	.Footer-row {
+		width: 100%;
+		margin: 0px;
+	}
+}
+
+.Footer-col {
+	padding-left: 1rem;
+	float: left;
+	border-left: solid 1px white;
+}
+
+.Footer-pennapps-logo {
+	margin-top: 1rem;
+	width: 4rem;
+}
+
+.Footer-penn-engineering-logo {
+	width: 8rem;
+}
+
+.Footer-text {
+	width: 218px;
+	font-family: "HalisR-Light";
+	font-style: normal;
+	font-weight: 900;
+	font-size: 14px;
+	line-height: 0px;
+	color: white;
+}

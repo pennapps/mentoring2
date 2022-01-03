@@ -1,6 +1,7 @@
 import './index.css';
 import './Landing.css';
 import Card from './Card.js';
+import Footer from './Footer.js';
 
 const welcomeContent = <p>We think hackathons should be about learning and meeting new people, so we’re here to make it happen! Being new to hacking can be a scary experience, but never fear... PennApps is here to help you along the way! In this guide, you can find information on the mentoring options we offer at PennApps, the workshops you can attend to learn about new topics, and the beginner guides for various languages and tools to begin your journey as a hacker. We hope that this can help get you started as you navigate your way through hackathons. Best of luck!</p>;
 const mentoringContent = <div>
@@ -37,7 +38,7 @@ function Landing() {
           </section>
         </div>
       </div>
-      {/*FOOTER GOES HERE*/}
+      <Footer />
     </div>
   );
 }
