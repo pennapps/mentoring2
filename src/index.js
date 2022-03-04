@@ -1,31 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Landing from './Landing';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <div>
-        <br />
-        <Routes>
-          <Route exact path="/" element={<Landing />} />
-          <Route exact path="/android" />
-          <Route exact path="/chrome_devtools" />
-          <Route exact path="/git&github" />
-          <Route exact path="/ios" />
-          <Route exact path="/java&oop" />
-          <Route exact path="/jquery" />
-          <Route exact path="/nodejs" />
-          <Route exact path="/python" />
-          <Route exact path="/texteditors" />
-          <Route exact path="/webdesign" />
-        </Routes>
-      </div>
-    </Router>
+    <Landing />
   </React.StrictMode>,
-  document.getElementById('root'),
+  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your Landing, pass a function
