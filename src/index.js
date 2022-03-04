@@ -19,8 +19,8 @@ ReactDOM.render(
           <Route exact path="/jquery" />
           <Route exact path="/nodejs" />
           <Route exact path="/python" />
-          <Route exact path="/texteditors" />
           <Route exact path="/webdesign" />
+          <Route exact path="/texteditors" />
         </Routes>
       </div>
     </Router>
