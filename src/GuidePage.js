@@ -1,8 +1,19 @@
 import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 
-export const GuidePage = (props) => {
-  const path = "/guides_md/" + props.guide + ".md";
+const GuidePage = (props) => {
+  const textBoxStyle = {
+    overflowY: "scroll",
+    width: "100%",
+    height: "700px",
+    backgroundColor: "white",
+    padding: "40px",
+    borderRadius: "20px",
+  };
+  const path =
+    "https://raw.githubusercontent.com/pennapps/guides/main/" +
+    props.guide +
+    ".md";
   const [pageState, loadFile] = useState("");
   useEffect(() => {
     fetch(path).then((file) =>
@@ -10,11 +21,13 @@ export const GuidePage = (props) => {
     );
   }, [path, props.guide]);
   return (
-    <div>
+    <div style={{ margin: "auto", width: "40%" }}>
       <h1>{props.guide}</h1>
-      <div style={{ "overflow-y": "scroll" }}>
+      <div style={textBoxStyle}>
         <ReactMarkdown children={pageState}></ReactMarkdown>
       </div>
     </div>
   );
 };
+
+export default GuidePage;
