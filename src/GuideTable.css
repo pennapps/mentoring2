@@ -9,8 +9,13 @@
     flex-direction: row;
 }
 
-.GuideTable-row:first-child .GuideCard {
-    margin-top: 1rem;
+@media(max-width: 1200px) {
+    .GuideTable-row {
+        flex-direction: column;
+    }
+    .GuideCard-container:first-child {
+        flex: 0.5;
+    }
 }
 
 .GuideTable-row:last-child .GuideCard {
