@@ -4,7 +4,6 @@ import Card from './Card.js';
 import GuideCard from './GuideCard.js';
 import GuideTable from './GuideTable.js';
 import Footer from './Footer.js';
-import { Link } from 'react-router-dom';
 
 const welcomeContent = (
   <p>
@@ -50,109 +49,188 @@ const mentoringContent = (
 const editorsContent = (
   <div>
     <p>
-      What is a code editor? Well, it’s not a word processor like Microsoft Word. Learn more about this here! Wow click the link to go to a full guide on what we recommend.    </p>
+      What is a code editor? Well, it’s not a word processor like Microsoft
+      Word. Learn more about this here! Wow click the link to go to a full guide
+      on what we recommend.{' '}
+    </p>
   </div>
-)
+);
 
 const webdevContent = (
   <div>
     <p>
-      What is a code editor? Well, it’s not a word processor like Microsoft Word. Learn more about this here! Wow click the link to go to a full guide on what we recommend.
+      What is a code editor? Well, it’s not a word processor like Microsoft
+      Word. Learn more about this here! Wow click the link to go to a full guide
+      on what we recommend.
     </p>
   </div>
-)
+);
 
 const gitContent = (
   <div>
     <p>
-      What is a code editor? Well, it’s not a word processor like Microsoft Word. Learn more about this here! Wow click the link to go to a full guide on what we recommend.    </p>
+      What is a code editor? Well, it’s not a word processor like Microsoft
+      Word. Learn more about this here! Wow click the link to go to a full guide
+      on what we recommend.{' '}
+    </p>
   </div>
-)
+);
 
 const javaContent = (
   <div>
     <p>
-      What is a code editor? Well, it’s not a word processor like Microsoft Word. Learn more about this here! Wow click the link to go to a full guide on what we recommend.
+      What is a code editor? Well, it’s not a word processor like Microsoft
+      Word. Learn more about this here! Wow click the link to go to a full guide
+      on what we recommend.
     </p>
   </div>
-)
+);
 
 const pythonContent = (
   <div>
     <p>
-      What is a code editor? Well, it’s not a word processor like Microsoft Word. Learn more about this here! Wow click the link to go to a full guide on what we recommend.    </p>
+      What is a code editor? Well, it’s not a word processor like Microsoft
+      Word. Learn more about this here! Wow click the link to go to a full guide
+      on what we recommend.{' '}
+    </p>
   </div>
-)
+);
 
 const androidContent = (
   <div>
     <p>
-      What is a code editor? Well, it’s not a word processor like Microsoft Word. Learn more about this here! Wow click the link to go to a full guide on what we recommend.
+      What is a code editor? Well, it’s not a word processor like Microsoft
+      Word. Learn more about this here! Wow click the link to go to a full guide
+      on what we recommend.
     </p>
   </div>
-)
+);
 
 const iosContent = (
   <div>
     <p>
-      What is a code editor? Well, it’s not a word processor like Microsoft Word. Learn more about this here! Wow click the link to go to a full guide on what we recommend.    </p>
+      What is a code editor? Well, it’s not a word processor like Microsoft
+      Word. Learn more about this here! Wow click the link to go to a full guide
+      on what we recommend.{' '}
+    </p>
   </div>
-)
+);
 
 const devtoolsContent = (
   <div>
     <p>
-      What is a code editor? Well, it’s not a word processor like Microsoft Word. Learn more about this here! Wow click the link to go to a full guide on what we recommend.
+      What is a code editor? Well, it’s not a word processor like Microsoft
+      Word. Learn more about this here! Wow click the link to go to a full guide
+      on what we recommend.
     </p>
   </div>
-)
+);
 
 const nodeContent = (
   <div>
     <p>
-      What is a code editor? Well, it’s not a word processor like Microsoft Word. Learn more about this here! Wow click the link to go to a full guide on what we recommend.    </p>
+      What is a code editor? Well, it’s not a word processor like Microsoft
+      Word. Learn more about this here! Wow click the link to go to a full guide
+      on what we recommend.{' '}
+    </p>
   </div>
-)
+);
 
 const jqueryContent = (
   <div>
     <p>
-      What is a code editor? Well, it’s not a word processor like Microsoft Word. Learn more about this here! Wow click the link to go to a full guide on what we recommend.
+      What is a code editor? Well, it’s not a word processor like Microsoft
+      Word. Learn more about this here! Wow click the link to go to a full guide
+      on what we recommend.
     </p>
   </div>
-)
+);
 
 const guideContent = (
   <div>
     <div className="GuideTable-row">
-      <GuideCard link="/text-editors" header="Text Editors" img="/platy_bg/editors.png" content={editorsContent} />
-      <GuideCard link="/web-design" header="Web Design" img="/platy_bg/webdev.png" content={webdevContent} />
+      <GuideCard
+        link="/text-editors"
+        header="Text Editors"
+        img="/platy_bg/editors.png"
+        content={editorsContent}
+      />
+      <GuideCard
+        link="/web-design"
+        header="Web Design"
+        img="/platy_bg/webdev.png"
+        content={webdevContent}
+      />
     </div>
     <div className="GuideTable-row">
-      <GuideCard link="/git&github" header="Git & Github" img="/platy_bg/git.png" content={gitContent} />
-      <GuideCard link="/java&oop" header="Java & OOP" img="/platy_bg/java.png" content={javaContent} />
+      <GuideCard
+        link="/git&github"
+        header="Git & Github"
+        img="/platy_bg/git.png"
+        content={gitContent}
+      />
+      <GuideCard
+        link="/java&oop"
+        header="Java & OOP"
+        img="/platy_bg/java.png"
+        content={javaContent}
+      />
     </div>
     <div className="GuideTable-row">
-      <GuideCard link="/python" header="Python" img="/platy_bg/python.png" content={pythonContent} />
-      <GuideCard link="/android" header="Android" img="/platy_bg/android.png" content={androidContent} />
+      <GuideCard
+        link="/python"
+        header="Python"
+        img="/platy_bg/python.png"
+        content={pythonContent}
+      />
+      <GuideCard
+        link="/android"
+        header="Android"
+        img="/platy_bg/android.png"
+        content={androidContent}
+      />
     </div>
     <div className="GuideTable-row">
-      <GuideCard link="/ios" header="iOS" img="/platy_bg/ios.png" content={iosContent} />
-      <GuideCard link="/chrome-devtools" header="Chrome DevTools" img="/platy_bg/devtools.png" content={devtoolsContent} />
+      <GuideCard
+        link="/ios"
+        header="iOS"
+        img="/platy_bg/ios.png"
+        content={iosContent}
+      />
+      <GuideCard
+        link="/chrome-devtools"
+        header="Chrome DevTools"
+        img="/platy_bg/devtools.png"
+        content={devtoolsContent}
+      />
     </div>
     <div className="GuideTable-row">
-      <GuideCard link="/nodejs" header="Node.js" img="/platy_bg/node.png" content={nodeContent} />
-      <GuideCard link="/jquery" header="JQuery" img="/platy_bg/jquery.png" content={jqueryContent} />
+      <GuideCard
+        link="/nodejs"
+        header="Node.js"
+        img="/platy_bg/node.png"
+        content={nodeContent}
+      />
+      <GuideCard
+        link="/jquery"
+        header="JQuery"
+        img="/platy_bg/jquery.png"
+        content={jqueryContent}
+      />
     </div>
+    <div className="GuideTable-row"></div>
   </div>
-)
-
+);
 
 function Landing() {
   return (
     <div className="Landing">
       <header className="Landing-header">
-        <img src="/landing-page.png" className="Landing-head-img" />
+        <img
+          src="/landing-page.png"
+          className="Landing-head-img"
+          alt="landing"
+        />
       </header>
       <nav className="Landing-nav">
         <h3>PennApps Mentoring</h3>
