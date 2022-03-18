@@ -1,27 +1,35 @@
 @font-face {
-  font-family: "HalisR-Black";
-  src: url("./fonts/2DDD1B_0_0.woff2") format("woff2")
+  font-family: 'HalisR-Black';
+  src: url('./fonts/2DDD1B_0_0.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: "HalisR-Light";
-  src: url("./fonts/2DDD1B_1_0.woff2") format("woff2")
+  font-family: 'HalisR-Light';
+  src: url('./fonts/2DDD1B_1_0.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: "HalisR-Regular";
-  src: url("./fonts/2DDD1B_2_0.woff2") format("woff2")
+  font-family: 'HalisR-Regular';
+  src: url('./fonts/2DDD1B_2_0.woff2') format('woff2');
 }
 
 body {
   margin: 0;
-  background-color: #D3F0EF;
-  font-family: "HalisR-Regular";
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #d3f0ef;
+  font-family: 'HalisR-Regular';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold;
-  color: #4C5391;
+  color: #4c5391;
 }

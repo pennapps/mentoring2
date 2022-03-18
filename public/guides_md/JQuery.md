@@ -12,9 +12,11 @@ Right under that snippet, put another script tag, like so:
 
 ```jsx
 <script>
-    $(‘document’).ready(function(){
-        //Your JQuery and Javascript code goes here
-});
+  $(‘document’).ready(function()
+  {
+    //Your JQuery and Javascript code goes here
+  }
+  );
 </script>
 ```
 
@@ -53,7 +55,7 @@ For this, it helps to know some CSS selectors, because JQuery can find nodes jus
 
 ```css
 p /* ← this is the selector! */ {
-    color: red;
+  color: red;
 }
 ```
 
