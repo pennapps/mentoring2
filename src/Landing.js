@@ -25,22 +25,7 @@ const mentoringContent = (
     </p>
     <ol>
       <li>
-        Mentor meet-up at{' '}
-        <a href="https://gather.town/app/j4MldlKyCZqjCQy6/PennAppsXXII">
-          gather.town
-        </a>{' '}
-        on Friday 9/10 from 7pm - 8pm ET (the space will open to hackers when
-        the hackathon starts)
-      </li>
-      <li>
-        <a href="https://piazza.com/class/ksqyt958jg5do">Piazza</a> - post your
-        questions and we have mentors online 24/7 to answer them
-      </li>
-      <li>
-        1:1 video calls through{' '}
-        <a href="https://gather.town/app/j4MldlKyCZqjCQy6/PennAppsXXII">
-          gather.town
-        </a>
+        Message the #ask-an-organizer channel on the HealthHacks discord!
       </li>
     </ol>
   </div>
@@ -50,8 +35,7 @@ const editorsContent = (
   <div>
     <p>
       What is a code editor? Well, it’s not a word processor like Microsoft
-      Word. Learn more about this here! Wow click the link to go to a full guide
-      on what we recommend.{' '}
+      Word. Learn more about this here!
     </p>
   </div>
 );
@@ -59,9 +43,8 @@ const editorsContent = (
 const webdevContent = (
   <div>
     <p>
-      What is a code editor? Well, it’s not a word processor like Microsoft
-      Word. Learn more about this here! Wow click the link to go to a full guide
-      on what we recommend.
+      HTML, CSS, and JavaScript form the basic building blocks of web development.
+      Learn more here!
     </p>
   </div>
 );
@@ -69,9 +52,8 @@ const webdevContent = (
 const gitContent = (
   <div>
     <p>
-      What is a code editor? Well, it’s not a word processor like Microsoft
-      Word. Learn more about this here! Wow click the link to go to a full guide
-      on what we recommend.{' '}
+      How do developers keep track of their coding progress throughout a project?
+      Version control! Learn more about git here.
     </p>
   </div>
 );
@@ -79,9 +61,8 @@ const gitContent = (
 const javaContent = (
   <div>
     <p>
-      What is a code editor? Well, it’s not a word processor like Microsoft
-      Word. Learn more about this here! Wow click the link to go to a full guide
-      on what we recommend.
+      Java is an important object-oriented programming language, and you
+      can use it for a variety of purposes. Learn more here!
     </p>
   </div>
 );
@@ -89,9 +70,8 @@ const javaContent = (
 const pythonContent = (
   <div>
     <p>
-      What is a code editor? Well, it’s not a word processor like Microsoft
-      Word. Learn more about this here! Wow click the link to go to a full guide
-      on what we recommend.{' '}
+      Python is a versatile language that is easy to learn! Click here to 
+      learn more.
     </p>
   </div>
 );
@@ -99,9 +79,8 @@ const pythonContent = (
 const androidContent = (
   <div>
     <p>
-      What is a code editor? Well, it’s not a word processor like Microsoft
-      Word. Learn more about this here! Wow click the link to go to a full guide
-      on what we recommend.
+      Android is the most widely used mobile operating system in the world. Click
+      here to learn more about it!
     </p>
   </div>
 );
@@ -109,9 +88,8 @@ const androidContent = (
 const iosContent = (
   <div>
     <p>
-      What is a code editor? Well, it’s not a word processor like Microsoft
-      Word. Learn more about this here! Wow click the link to go to a full guide
-      on what we recommend.{' '}
+      iOS is the next most widely used mobile operating system in the world after Android.
+      Learn more here!
     </p>
   </div>
 );
@@ -119,9 +97,8 @@ const iosContent = (
 const devtoolsContent = (
   <div>
     <p>
-      What is a code editor? Well, it’s not a word processor like Microsoft
-      Word. Learn more about this here! Wow click the link to go to a full guide
-      on what we recommend.
+      Ever wondered how to see behind the rendering of a webpage? Learn more
+      about Chrome DevTools by clicking here! 
     </p>
   </div>
 );
@@ -129,9 +106,9 @@ const devtoolsContent = (
 const nodeContent = (
   <div>
     <p>
-      What is a code editor? Well, it’s not a word processor like Microsoft
-      Word. Learn more about this here! Wow click the link to go to a full guide
-      on what we recommend.{' '}
+      An important piece of any complete web application is a server backend, and
+      Node.js allows developers to write server-side code right in JavaScript! Learn
+      more here.
     </p>
   </div>
 );
@@ -139,9 +116,8 @@ const nodeContent = (
 const jqueryContent = (
   <div>
     <p>
-      What is a code editor? Well, it’s not a word processor like Microsoft
-      Word. Learn more about this here! Wow click the link to go to a full guide
-      on what we recommend.
+    JQuery is a helpful Javascript library that makes possible to bring webpages to 
+    life without going insane. Click to learn more!
     </p>
   </div>
 );
