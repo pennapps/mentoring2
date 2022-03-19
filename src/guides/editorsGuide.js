@@ -4,7 +4,7 @@ import GuidePage from '../GuidePage';
 const editorsGuide = () => {
   return (
     <div className="guide-page">
-      <GuidePage guide="Text Editors" img="/platy/platy_text-editor.png" />
+      <GuidePage guide="Text Editors" img="https://github.com/pennapps/mentoring2/raw/main/platy/platy_text-editor.png" />
     </div>
   );
 };

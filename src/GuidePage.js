@@ -3,6 +3,7 @@ import ReactMarkdown from 'react-markdown';
 import './GuidePage.css';
 
 const GuidePage = (props) => {
+  const img = <img src={props.img} className="GuidePage-image" alt="platy-bg" />;
   const path =
     'https://raw.githubusercontent.com/pennapps/guides/main/' +
     props.guide +
@@ -28,7 +29,6 @@ const GuidePage = (props) => {
           </div>
         </div>
         <div className="guide-img">
-          <img src={props.img} className="GuidePage-image" alt="platy-bg" />
         </div>
       </div>
     </div>
