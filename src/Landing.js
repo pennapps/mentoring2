@@ -1,3 +1,4 @@
+import {useLayoutEffect, useState, useEffect, useRef} from 'react'
 import './index.css';
 import './Landing.css';
 import Card from './Card.js';
@@ -198,17 +199,44 @@ const guideContent = (
   </div>
 );
 
+function useWindowSize() {
+  const [size, setSize] = useState([0, 0]);
+  useLayoutEffect(() => {
+    function updateSize() {
+      setSize([window.innerWidth, window.innerHeight]);
+    }
+    window.addEventListener('resize', updateSize);
+    updateSize();
+    return () => window.removeEventListener('resize', updateSize);
+  }, []);
+  return size;
+}
+
 function Landing() {
+  const inital = useRef(true);
+  const imgRef = useRef();
+  const [navMargin, setNavMargin] = useState(0);
+  const [width, height] = useWindowSize();
+
+  const onImgLoad = ({ target:img }) => {
+    //5rem = 80px
+    console.log(height)
+    console.log(img.clientHeight)
+    setNavMargin(img.clientHeight < height ? img.clientHeight : (height - 80))
+  }
+
   return (
     <div className="Landing">
       <header className="Landing-header">
         <img
+          ref={imgRef}
           src="/landing-page.png"
           className="Landing-head-img"
           alt="landing"
+          onLoad={onImgLoad}
         />
       </header>
-      <nav className="Landing-nav">
+      <nav className="Landing-nav" style={{marginTop: navMargin}}>
         <h3>PennApps Mentoring</h3>
       </nav>
       <div className="Landing-body">
