@@ -29,6 +29,7 @@ const GuidePage = (props) => {
           </div>
         </div>
         <div className="guide-img">
+          {img}
         </div>
       </div>
     </div>
