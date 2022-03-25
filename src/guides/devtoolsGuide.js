@@ -6,7 +6,7 @@ const devtoolsGuide = () => {
     <div className="guide-page">
       <GuidePage
         guide="Chrome DevTools"
-        img="https://github.com/pennapps/mentoring2/raw/main/public/platy/platy_chrome-dev-tools.png"
+        img="https://github.com/pennapps/mentoring2/raw/main/platy/platy_chrome-dev-tools.png"
       />
     </div>
   );
