@@ -3,7 +3,7 @@ import './Landing.css';
 import Card from './Card.js';
 import Footer from './Footer.js';
 
-const welcomeContent = <p>We think hackathons should be about learning and meeting new people, so we’re here to make it happen! Being new to hacking can be a scary experience, but never fear... PennApps is here to help you along the way! In this guide, you can find information on the mentoring options we offer at PennApps, the workshops you can attend to learn about new topics, and the beginner guides for various languages and tools to begin your journey as a hacker. We hope that this can help get you started as you navigate your way through hackathons. Best of luck!</p>;
+const welcomeContent = <><p>Hackathons should be about learning new things and meeting new people, and we’re here to make it happen! PennApps is here to help you along the way, whether you're a seasoned developer or just starting out on your hacker journey!</p> <p>On this website, you can find information on the mentoring options we offer at PennApps, the workshops you can attend to learn about new topics, and starter guides for various languages and tools to kickstart your journey as a hacker. We hope that this gets you started as you navigate your way through PennApps and future hackathons. Best of luck!</p></>
 const mentoringContent = <div>
   <p>Not sure where to start? Need help brainstorming? Stuck on a bug? You can contact our wonderful mentors through the following methods:</p>
   <ol>
