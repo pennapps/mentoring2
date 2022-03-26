@@ -1,3 +1,12 @@
+.guide-container {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+}
+
 .guide-info {
   margin-right: -175px;
   margin-left: 35%;
@@ -20,11 +29,10 @@
   overflow-y: scroll;
   padding: 25px;
   font-style: normal;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 31px;
-  max-height: 800px;
-  min-height: 800px;
-  height: auto;
+  height: 65%;
+  max-height: 675px;
 }
 
 .GuidePage-container {
