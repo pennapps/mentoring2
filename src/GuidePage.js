@@ -1,20 +1,20 @@
-import { useEffect, useState } from 'react';
-import ReactMarkdown from 'react-markdown';
-import './GuidePage.css';
+import { useEffect, useState } from "react";
+import ReactMarkdown from "react-markdown";
+import "./GuidePage.css";
 
 const GuidePage = (props) => {
   const path =
-    'https://raw.githubusercontent.com/pennapps/guides/main/' +
+    "https://raw.githubusercontent.com/pennapps/guides/main/" +
     props.guide +
-    '.md';
-  const [pageState, loadFile] = useState('');
+    ".md";
+  const [pageState, loadFile] = useState("");
   useEffect(() => {
     fetch(path).then((file) =>
-      file.text().then((text) => loadFile(text.slice(props.guide.length + 2))),
+      file.text().then((text) => loadFile(text.slice(props.guide.length + 2)))
     );
   }, [path, props.guide]);
   return (
-    <div>
+    <div className="guide-container">
       <nav className="guide-nav">
         <h3>PennApps Mentoring</h3>
       </nav>
