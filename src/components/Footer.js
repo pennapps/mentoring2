@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './Footer.css';
+import '../styles/Footer.css';
 
-const pennappsLogo = 'logos/logo-white.png';
-const penngineeringLogo = 'logos/seas-logo-blue.png';
+import pennappsLogo from '../images/logos/logo-white.png';
+import penngineeringLogo from '../images/logos/seas-logo-blue.png';
 
 class Footer extends Component {
   render() {

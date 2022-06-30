@@ -4,7 +4,7 @@ import GuidePage from '../GuidePage';
 const devtoolsGuide = () => {
   return (
     <div className="guide-page">
-      <GuidePage guide="Node js" img="/platy/platy_node.png" />
+      <GuidePage guide="Node js" img="../images/platy/platy_node.png" />
     </div>
   );
 };

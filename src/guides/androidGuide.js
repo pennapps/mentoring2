@@ -4,7 +4,7 @@ import GuidePage from '../GuidePage';
 const androidGuide = () => {
   return (
     <div className="guide-page">
-      <GuidePage guide="Android" img="/platy/platy_android.png" />
+      <GuidePage guide="Android" img="../images/platy/platy_android.png" />
     </div>
   );
 };

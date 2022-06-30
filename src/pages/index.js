@@ -1,182 +1,239 @@
-import * as React from "react"
+import * as React from "react";
+import '../styles/index.css';
+import '../styles/Landing.css';
+import Card from '../components/Card.js';
+import GuideCard from '../components/GuideCard.js';
+import GuideTable from '../components/GuideTable.js';
+import Footer from '../components/Footer.js';
+import landing_bg from "../images/landing-page.png";
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-const headingAccentStyles = {
-  color: "#663399",
-}
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-}
-const listItemStyles = {
-  fontWeight: 300,
-  fontSize: 24,
-  maxWidth: 560,
-  marginBottom: 30,
-}
+const welcomeContent = (
+  <p>
+    We think hackathons should be about learning and meeting new people, so
+    we’re here to make it happen! Being new to hacking can be a scary
+    experience, but never fear... PennApps is here to help you along the way! In
+    this guide, you can find information on the mentoring options we offer at
+    PennApps, the workshops you can attend to learn about new topics, and the
+    beginner guides for various languages and tools to begin your journey as a
+    hacker. We hope that this can help get you started as you navigate your way
+    through hackathons. Best of luck!
+  </p>
+);
 
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
-  fontSize: 16,
-  verticalAlign: "5%",
-}
+const mentoringContent = (
+  <div>
+    <p>
+      Not sure where to start? Need help brainstorming? Stuck on a bug? You can
+      contact our wonderful mentors through the following methods:
+    </p>
+    <ol>
+      <li>
+        Message the #ask-an-organizer channel on the HealthHacks discord!
+      </li>
+    </ol>
+  </div>
+);
 
-const docLinkStyle = {
-  ...linkStyle,
-  listStyleType: "none",
-  marginBottom: 24,
-}
+const editorsContent = (
+  <div>
+    <p>
+      What is a code editor? Well, it’s not a word processor like Microsoft
+      Word. Learn more about this here!
+    </p>
+  </div>
+);
 
-const descriptionStyle = {
-  color: "#232129",
-  fontSize: 14,
-  marginTop: 10,
-  marginBottom: 0,
-  lineHeight: 1.25,
-}
+const webdevContent = (
+  <div>
+    <p>
+      HTML, CSS, and JavaScript form the basic building blocks of web development.
+      Learn more here!
+    </p>
+  </div>
+);
 
-const docLink = {
-  text: "Documentation",
-  url: "https://www.gatsbyjs.com/docs/",
-  color: "#8954A8",
-}
+const gitContent = (
+  <div>
+    <p>
+      How do developers keep track of their coding progress throughout a project?
+      Version control! Learn more about git here.
+    </p>
+  </div>
+);
 
-const badgeStyle = {
-  color: "#fff",
-  backgroundColor: "#088413",
-  border: "1px solid #088413",
-  fontSize: 11,
-  fontWeight: "bold",
-  letterSpacing: 1,
-  borderRadius: 4,
-  padding: "4px 6px",
-  display: "inline-block",
-  position: "relative",
-  top: -2,
-  marginLeft: 10,
-  lineHeight: 1,
-}
+const javaContent = (
+  <div>
+    <p>
+      Java is an important object-oriented programming language, and you
+      can use it for a variety of purposes. Learn more here!
+    </p>
+  </div>
+);
 
-// data
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial/",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#E95800",
-  },
-  {
-    text: "How to Guides",
-    url: "https://www.gatsbyjs.com/docs/how-to/",
-    description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#1099A8",
-  },
-  {
-    text: "Reference Guides",
-    url: "https://www.gatsbyjs.com/docs/reference/",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-    color: "#BC027F",
-  },
-  {
-    text: "Conceptual Guides",
-    url: "https://www.gatsbyjs.com/docs/conceptual/",
-    description:
-      "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
-    color: "#0D96F2",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-    color: "#8EB814",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    badge: true,
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-    color: "#663399",
-  },
-]
+const pythonContent = (
+  <div>
+    <p>
+      Python is a versatile language that is easy to learn! Click here to 
+      learn more.
+    </p>
+  </div>
+);
 
-// markup
+const androidContent = (
+  <div>
+    <p>
+      Android is the most widely used mobile operating system in the world. Click
+      here to learn more about it!
+    </p>
+  </div>
+);
+
+const iosContent = (
+  <div>
+    <p>
+      iOS is the next most widely used mobile operating system in the world after Android.
+      Learn more here!
+    </p>
+  </div>
+);
+
+const devtoolsContent = (
+  <div>
+    <p>
+      Ever wondered how to see behind the rendering of a webpage? Learn more
+      about Chrome DevTools by clicking here! 
+    </p>
+  </div>
+);
+
+const nodeContent = (
+  <div>
+    <p>
+      An important piece of any complete web application is a server backend, and
+      Node.js allows developers to write server-side code right in JavaScript! Learn
+      more here.
+    </p>
+  </div>
+);
+
+const jqueryContent = (
+  <div>
+    <p>
+    JQuery is a helpful Javascript library that makes possible to bring webpages to 
+    life without going insane. Click to learn more!
+    </p>
+  </div>
+);
+
+const guideContent = (
+  <div>
+    <div className="GuideTable-row">
+      <GuideCard
+        link="/text-editors"
+        header="Text Editors"
+        img="/platy_bg/editors.png"
+        content={editorsContent}
+      />
+      <GuideCard
+        link="/web-design"
+        header="Web Design"
+        img="/platy_bg/webdev.png"
+        content={webdevContent}
+      />
+    </div>
+    <div className="GuideTable-row">
+      <GuideCard
+        link="/git&github"
+        header="Git & Github"
+        img="/platy_bg/git.png"
+        content={gitContent}
+      />
+      <GuideCard
+        link="/java&oop"
+        header="Java & OOP"
+        img="/platy_bg/java.png"
+        content={javaContent}
+      />
+    </div>
+    <div className="GuideTable-row">
+      <GuideCard
+        link="/python"
+        header="Python"
+        img="/platy_bg/python.png"
+        content={pythonContent}
+      />
+      <GuideCard
+        link="/android"
+        header="Android"
+        img="/platy_bg/android.png"
+        content={androidContent}
+      />
+    </div>
+    <div className="GuideTable-row">
+      <GuideCard
+        link="/ios"
+        header="iOS"
+        img="/platy_bg/ios.png"
+        content={iosContent}
+      />
+      <GuideCard
+        link="/chrome-devtools"
+        header="Chrome DevTools"
+        img="/platy_bg/devtools.png"
+        content={devtoolsContent}
+      />
+    </div>
+    <div className="GuideTable-row">
+      <GuideCard
+        link="/nodejs"
+        header="Node.js"
+        img="/platy_bg/node.png"
+        content={nodeContent}
+      />
+      <GuideCard
+        link="/jquery"
+        header="JQuery"
+        img="/platy_bg/jquery.png"
+        content={jqueryContent}
+      />
+    </div>
+    <div className="GuideTable-row"></div>
+  </div>
+);
+
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
+    <main>
       <title>Home Page</title>
-      <h1 style={headingStyles}>
-        Congratulations
-        <br />
-        <span style={headingAccentStyles}>— you just made a Gatsby site! </span>
-        <span role="img" aria-label="Party popper emojis">
-          🎉🎉🎉
-        </span>
-      </h1>
-      <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
-        update in real-time.{" "}
-        <span role="img" aria-label="Sunglasses smiley emoji">
-          😎
-        </span>
-      </p>
-      <ul style={listStyles}>
-        <li style={docLinkStyle}>
-          <a
-            style={linkStyle}
-            href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-          >
-            {docLink.text}
-          </a>
-        </li>
-        {links.map(link => (
-          <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
-            <span>
-              <a
-                style={linkStyle}
-                href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-              >
-                {link.text}
-              </a>
-              {link.badge && (
-                <span style={badgeStyle} aria-label="New Badge">
-                  NEW!
-                </span>
-              )}
-              <p style={descriptionStyle}>{link.description}</p>
-            </span>
-          </li>
-        ))}
-      </ul>
-      <img
-        alt="Gatsby G Logo"
-        src="data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2a10 10 0 110 20 10 10 0 010-20zm0 2c-3.73 0-6.86 2.55-7.75 6L14 19.75c3.45-.89 6-4.02 6-7.75h-5.25v1.5h3.45a6.37 6.37 0 01-3.89 4.44L6.06 9.69C7 7.31 9.3 5.63 12 5.63c2.13 0 4 1.04 5.18 2.65l1.23-1.06A7.959 7.959 0 0012 4zm-8 8a8 8 0 008 8c.04 0 .09 0-8-8z' fill='%23639'/%3E%3C/svg%3E"
-      />
+      <div className="Landing">
+        <header className="Landing-header">
+          <img
+            src={landing_bg}
+            className="Landing-head-img"
+            alt="landing"
+          />
+        </header>
+        <nav className="Landing-nav">
+          <h3>PennApps Mentoring</h3>
+        </nav>
+        <div className="Landing-body">
+          <div className="Landing-container">
+            <section className="Landing-section">
+              <h1>Welcome</h1>
+              <Card content={welcomeContent} />
+            </section>
+            <section className="Landing-section">
+              <h1>Mentoring Options</h1>
+              <Card content={mentoringContent} />
+            </section>
+            <section className="Landing-section">
+              <h1>Beginner Guides</h1>
+              <GuideTable content={guideContent} />
+            </section>
+          </div>
+        </div>
+        <Footer />
+      </div>
     </main>
   )
 }

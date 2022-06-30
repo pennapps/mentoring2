@@ -4,7 +4,7 @@ import GuidePage from '../GuidePage';
 const gitGuide = () => {
   return (
     <div className="guide-page">
-      <GuidePage guide="Git & Github" img="/platy/platy_git.png" />
+      <GuidePage guide="Git & Github" img="../images/platy/platy_git.png" />
     </div>
   );
 };

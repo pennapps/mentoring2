@@ -1,5 +1,6 @@
-import './index.css';
-import './GuideTable.css';
+import * as React from "react";
+import '../styles/index.css';
+import '../styles/GuideTable.css';
 
 function GuideTable(props) {
     return (

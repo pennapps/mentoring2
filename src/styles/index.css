@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'HalisR-Black';
-  src: url('./fonts/2DDD1B_0_0.woff2') format('woff2');
+  src: url('../fonts/2DDD1B_0_0.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'HalisR-Light';
-  src: url('./fonts/2DDD1B_1_0.woff2') format('woff2');
+  src: url('../fonts/2DDD1B_1_0.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'HalisR-Regular';
-  src: url('./fonts/2DDD1B_2_0.woff2') format('woff2');
+  src: url('../fonts/2DDD1B_2_0.woff2') format('woff2');
 }
 
 body {

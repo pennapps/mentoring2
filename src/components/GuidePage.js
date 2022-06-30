@@ -1,6 +1,7 @@
+import * as React from "react";
 import { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
-import './GuidePage.css';
+import '../styles/GuidePage.css';
 
 const GuidePage = (props) => {
   const path =

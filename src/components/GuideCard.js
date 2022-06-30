@@ -1,12 +1,13 @@
-import './index.css';
-import './GuideCard.css';
-import { Link } from 'react-router-dom';
+import * as React from "react";
+import '../styles/index.css';
+import '../styles/GuideCard.css';
+import { Link } from "gatsby";
 
 function GuideCard(props) {
     return (
       <div className="GuideCard">
           <div className="GuideCard-container">
-            <img src={props.img} className="GuideCard-image" />
+            <img src={"../images" + props.img} className="GuideCard-image" />
           </div>
           <div className="GuideCard-container">
             <h3>
