@@ -1,8 +1,13 @@
 {
-  "name": "guides",
+  "name": "pennapps-mentoring",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "gatsby": "^4.17.2",
+    "gatsby-plugin-mdx": "^3.17.0",
+    "gatsby-source-filesystem": "^4.17.0",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
@@ -14,10 +19,11 @@
     "web-vitals": "^2.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
   "eslintConfig": {
     "extends": [
