@@ -1,5 +1,5 @@
-import './index.css';
-import './GuideTable.css';
+import './styles/index.css';
+import './styles/GuideTable.css';
 
 function GuideTable(props) {
     return (

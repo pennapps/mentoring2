@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
-import ReactMarkdown from 'react-markdown';
-import './GuidePage.css';
+import { useEffect, useState } from "react";
+import ReactMarkdown from "react-markdown";
+import "./styles/GuidePage.css";
 
 const GuidePage = (props) => {
   const img = <img src={props.img} className="GuidePage-image" alt="platy-bg" />;

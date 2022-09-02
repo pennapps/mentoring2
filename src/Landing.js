@@ -1,5 +1,5 @@
-import './index.css';
-import './Landing.css';
+import './styles/index.css';
+import './styles/Landing.css';
 import Card from './Card.js';
 import GuideCard from './GuideCard.js';
 import GuideTable from './GuideTable.js';
@@ -25,7 +25,13 @@ const mentoringContent = (
     </p>
     <ol>
       <li>
-        Message the #ask-an-organizer channel on the HealthHacks discord!
+        Message the #ask-an-organizer or #ask-a-mentor channels in the PennApps XXIII Slack
+      </li>
+      <li>
+        Attend one of the workshops (schedule <a href="https://2022f.pennapps.com/schedule/" target="_blank">here</a>)
+      </li>
+      <li>
+        Reference the beginner guides on this site :)
       </li>
     </ol>
   </div>
