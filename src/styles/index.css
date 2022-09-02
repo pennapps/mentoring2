@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'HalisR-Black';
+  src: url('./fonts/2DDD1B_0_0.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'HalisR-Light';
+  src: url('./fonts/2DDD1B_1_0.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'HalisR-Regular';
+  src: url('./fonts/2DDD1B_2_0.woff2') format('woff2');
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #fff;
+  font-family: 'HalisR-Regular';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "HalisR-Regular";
+  font-weight: bold;
+  color: #0f2944;
+}

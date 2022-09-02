@@ -1,0 +1,12 @@
+.Card {
+	box-sizing: border-box;
+	width: 100%;
+	background-color: #f4f9ff;
+	border-radius: 25px;
+	padding: 1rem 2rem;
+	filter: drop-shadow(1px 1px 1px gray);
+}
+
+.Card a {
+	color: #CDE1F9;
+}
