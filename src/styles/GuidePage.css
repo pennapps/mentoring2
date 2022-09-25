@@ -2,6 +2,10 @@
   height: 100%;
 }
 
+a, a:hover, a:visited, a p {
+	color: #0f2944;
+}
+
 .guide-container {
   position: absolute;
   margin: 0;
@@ -12,7 +16,7 @@
 }
 
 .guide-info {
-  margin: 10%;
+  margin: 2% 5%;
   /* margin-right: -175px;
   margin-left: 35%; */
   width: 90%;
