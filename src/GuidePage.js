@@ -1,8 +1,10 @@
-import { useEffect, useState } from 'react';
-import ReactMarkdown from 'react-markdown';
-import './GuidePage.css';
+import { useEffect, useState } from "react";
+import ReactMarkdown from "react-markdown";
+import "./styles/GuidePage.css";
+import { Link } from 'react-router-dom';
 
 const GuidePage = (props) => {
+  const img = <img src={props.img} className="GuidePage-image" alt="platy-bg" />;
   const path =
     'https://raw.githubusercontent.com/pennapps/guides/main/' +
     props.guide +
@@ -16,7 +18,7 @@ const GuidePage = (props) => {
   return (
     <div>
       <nav className="guide-nav">
-        <h3>PennApps Mentoring</h3>
+        <h3><Link to="/" style={{ textDecoration: 'none' }}>PennApps Mentoring</Link></h3>
       </nav>
       <div className="GuidePage-container">
         <div className="guide-info">
@@ -28,7 +30,6 @@ const GuidePage = (props) => {
           </div>
         </div>
         <div className="guide-img">
-          <img src={props.img} className="GuidePage-image" alt="platy-bg" />
         </div>
       </div>
     </div>

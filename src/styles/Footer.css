@@ -1,16 +1,16 @@
 .Footer {
 	width: 100%;
 	padding: 2rem 0;
-	background-color: #4C5391;
+	background-color: #0f2944;
 	z-index: 1;
-	color: white;
+	color: #fff;
 	font-family: "HalisR-Light";
 	text-align: left;
 	font-size: 0.9rem;
 }
 
 .Footer a {
-	color: white;
+	color: #fff;
 	text-decoration: none;
 }
 
@@ -50,5 +50,5 @@
 	font-weight: 900;
 	font-size: 14px;
 	line-height: 0px;
-	color: white;
+	color: #fff;
 }

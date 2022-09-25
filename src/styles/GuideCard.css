@@ -1,12 +1,17 @@
 .GuideCard {
 	box-sizing: border-box;
 	width: 100%;
-	background-color: white;
+	background-color: #f4f9ff;
 	border-radius: 25px;
 	padding: 2rem;
 	margin: 0 2rem 2rem 0;
 	display: flex;
 	flex-direction: row;
+	filter: drop-shadow(1px 1px 1px gray);
+}
+
+.GuideCard:hover { 
+	filter: drop-shadow(2px 3px 3px gray);
 }
 
 .GuideCard-container {
@@ -25,4 +30,8 @@
 .GuideCard-image {
 	max-width: 100%;
 	max-height: 100%;
+}
+
+.GuideCard a, a:hover, a:visited, a p {
+	color: #0f2944;
 }

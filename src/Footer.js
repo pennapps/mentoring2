@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Footer.css';
+import './styles/Footer.css';
 
 const pennappsLogo = 'logos/logo-white.png';
 const penngineeringLogo = 'logos/seas-logo-blue.png';

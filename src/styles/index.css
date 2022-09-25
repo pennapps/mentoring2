@@ -18,7 +18,7 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  background-color: #d3f0ef;
+  background-color: #fff;
   font-family: 'HalisR-Regular';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -30,6 +30,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "HalisR-Regular";
   font-weight: bold;
-  color: #4c5391;
+  color: #0f2944;
 }
