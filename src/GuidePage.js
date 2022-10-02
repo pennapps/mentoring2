@@ -18,7 +18,7 @@ const GuidePage = (props) => {
   return (
     <div>
       <nav className="guide-nav">
-        <h3><Link to="/" style={{ textDecoration: 'none' }}>PennApps Mentoring</Link></h3>
+        <h3><Link to="/" style={{ textDecoration: 'none' }}>Back to Home</Link></h3>
       </nav>
       <div className="GuidePage-container">
         <div className="guide-info">
