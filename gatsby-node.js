@@ -10,7 +10,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const fetchData = async (page) => {
     const url = page.toLowerCase().replace(' js', 'js').replace(' & ', '&').replace(' ', '-')
     const text = await fetch(`https://raw.githubusercontent.com/pennapps/guides/main/${page}.md`).then(file => file.text())
-    return {url, text}
+    return {url, text, name: page}
   }
   
   const result = []
@@ -23,7 +23,7 @@ exports.createPages = async ({ graphql, actions }) => {
       createPage({
         path: `/${page.url}`,
         component: template,
-        context: {text: page.text}
+        context: {text: page.text, name: page.name}
       })
   })
 }

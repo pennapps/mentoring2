@@ -6,6 +6,7 @@ import GuideCard from '../components/GuideCard.js';
 import GuideTable from '../components/GuideTable.js';
 import Footer from '../components/Footer.js';
 import LandingPage from '../images/landing-page.png'
+import { Helmet } from 'react-helmet';
 
 
 const welcomeContent = (
@@ -210,6 +211,9 @@ const guideContent = (
 const IndexPage = () => {
   return (
     <div className="Landing">
+      <Helmet>
+        <title>PennApps Mentoring</title>
+      </Helmet>
       <header className="Landing-header">
         <img
           src={LandingPage}
@@ -242,5 +246,3 @@ const IndexPage = () => {
 }
 
 export default IndexPage
-
-export const Head = () => <title>Home Page</title>
