@@ -13,7 +13,6 @@ const GuidePage = ({pageContext}) => {
       </nav>
       <div className="GuidePage-container">
         <div className="guide-info">
-          <h1 className="guide-title">TITLE</h1>
           <div className="guide-content">
             <div className="guide-markdown">
               <ReactMarkdown>{text}</ReactMarkdown>
