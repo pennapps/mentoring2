@@ -14,7 +14,7 @@ const GuidePage = ({pageContext}) => {
           <Link to="/" style={{ textDecoration: 'none' }}>
             <div className="row">
               <img src={backIcon} alt="Back Icon" width={28} />
-              <p>Back to Home</p>
+              <p>Back</p>
             </div>
           </Link>
         </h3>
