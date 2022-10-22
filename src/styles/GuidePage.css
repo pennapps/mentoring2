@@ -6,6 +6,10 @@ a, a:hover, a:visited, a p {
 	color: #0f2944;
 }
 
+.row {
+  display: flex;
+}
+
 .guide-container {
   position: absolute;
   margin: 0;
