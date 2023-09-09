@@ -28,10 +28,10 @@ const mentoringContent = (
     </p>
     <ol>
       <li>
-        Message the #ask-an-organizer or #ask-a-mentor channels in the PennApps XXIII Slack
+        Message the #mentorship or #ask-an-organizer channels in the PennApps XXIV Slack
       </li>
       <li>
-        Attend one of the workshops (schedule <a href="https://2022f.pennapps.com/schedule/" target="_blank">here</a>)
+        Attend one of the workshops (schedule <a href="https://2023f.pennapps.com/schedule/" target="_blank">here</a>)
       </li>
       <li>
         Reference the beginner guides on this site :)
@@ -79,7 +79,7 @@ const javaContent = (
 const pythonContent = (
   <div>
     <p>
-      Python is a versatile language that is easy to learn! Click here to 
+      Python is a versatile language that is easy to learn! Click here to
       learn more.
     </p>
   </div>
@@ -107,7 +107,7 @@ const devtoolsContent = (
   <div>
     <p>
       Ever wondered how to see behind the rendering of a webpage? Learn more
-      about Chrome DevTools by clicking here! 
+      about Chrome DevTools by clicking here!
     </p>
   </div>
 );
@@ -125,7 +125,7 @@ const nodeContent = (
 const jqueryContent = (
   <div>
     <p>
-    JQuery is a helpful Javascript library that makes possible to bring webpages to 
+    JQuery is a helpful Javascript library that makes possible to bring webpages to
     life without going insane. Click to learn more!
     </p>
   </div>
