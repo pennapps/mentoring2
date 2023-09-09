@@ -10,9 +10,9 @@ class Footer extends Component {
         <div className="Footer-row">
           <div className="col-lg-6 col-sm-6">
             <div className="Footer-col">
-              <img className="Footer-pennapps-logo" src={pennappsLogo} />
+              <img className="Footer-pennapps-logo" src={pennappsLogo} alt="pennapps-logo" />
               <p>
-                &copy; 2022 PennApps <br />
+                &copy; 2023 PennApps <br />
                 <a href="mailto:contact@pennapps.com">contact@pennapps.com</a>
               </p>
             </div>
@@ -29,7 +29,7 @@ class Footer extends Component {
             <div className="Footer-col">
               <p>Organized with support from:</p>
               <a href="http://www.seas.upenn.edu">
-                <img className="Footer-penn-engineering-logo" src={penngineeringLogo} />
+                <img className="Footer-penn-engineering-logo" src={penngineeringLogo} alt="penn-engineering-logo" />
               </a>
             </div>
           </div>
